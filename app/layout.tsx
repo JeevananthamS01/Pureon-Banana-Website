@@ -27,7 +27,8 @@ const agrandirWide = localFont({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://pureon-banana.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
+  "https://pureon-banana.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,7 +38,9 @@ export const metadata: Metadata = {
   },
   description:
     "PUREON manufactures and exports banana powder and fruit and vegetable dry powders, with a focus on quality, hygienic processing and dependable supply.",
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "PUREON | From Nature to Quality",
     description:
@@ -51,7 +54,9 @@ export const metadata: Metadata = {
     description:
       "Nendharam Banana Health Mix and natural food ingredients from PUREON.",
   },
-  icons: { icon: "/favicon.svg" },
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 const jsonLd = {
