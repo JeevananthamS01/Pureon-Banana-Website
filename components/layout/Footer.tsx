@@ -12,6 +12,7 @@ import {
 import { FiArrowUpRight, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { navItems, site } from "@/data/site";
 import Newsletter from "./NewsLetter";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -19,8 +20,13 @@ export function Footer() {
       <div className="container footer-main">
         <div className="footer-brand">
           <Link href="#home" className="logo logo--footer">
-            <span className="logo__mark">✦</span>
-            <span className="logo__word">PUREON</span>
+            <Image
+              src="/images/logo.png"
+              alt="PUREON"
+              width={160}
+              height={50}
+              priority
+            />
           </Link>
           <p className="text-para">
             From Nature to Quality. PUREON delivers quality, hygienically

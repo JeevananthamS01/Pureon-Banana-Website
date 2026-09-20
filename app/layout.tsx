@@ -55,7 +55,7 @@ export const metadata: Metadata = {
       "Nendharam Banana Health Mix and natural food ingredients from PUREON.",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
   },
 };
 
