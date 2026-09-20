@@ -27,7 +27,7 @@ const agrandirWide = localFont({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://pureon.example.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://pureon-banana.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
